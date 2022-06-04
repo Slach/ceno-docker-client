@@ -96,7 +96,13 @@ Your client will start seeding as soon as it starts. Please note that you need t
   1. Clone the CENO Web Extension repo: `git clone https://github.com/censorship-no/ceno-ext-settings.git`
   2. Create a test profile for Firefox: `mkdir ceno-test`
   3. Run Firefox with the test profile: `firefox --no-remote --profile ceno-test`
-  4. Go to <http://localhost:8078/> and install the client-specific CA certificate linked in there to identify web sites.
+  4. Go to <http://localhost:8078/> and install the client-specific CA certificate linked in there to identify web sites. 
+     Use Settings-> Privacy&Security (about:preferences#privacy)-> Certificates -> View certificates -> Import
+![image](https://user-images.githubusercontent.com/105560/171990973-4497a80e-476d-4f5c-867d-ef2c3862e602.png)
+![image](https://user-images.githubusercontent.com/105560/171990992-7edf63d8-c4ed-4897-9299-c2d2a01f7307.png)
+
+
+
   5. Enable the CENO Extension: in Firefox's *Add-ons* window, click on the gears icon, then *Debug Add-ons*, then *Load Temporary Add-on…* and choose the *manifest.json* file under the `ceno-ext-settings` directory.
   6. Since CENO Browser v1.3.0 and newer uses HTTPS for all pages, enable *HTTPS-Only Mode* in Firefox's *Settings* window, under *Privacy & Security*. For older browsers lacking that option, install the [HTTPS by default][] extension instead.
 
